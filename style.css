@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+html, body {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 30px ;
+}
+#title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+#simon {
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+
+#simon > .b {
+  display: block;
+  height: 200px; 
+  width: 200px;
+  margin: 0; 
+  padding: 0; 
+}
+
+#simon > .b.red {
+  background-color: red;   
+}
+
+#simon > .b.red.light {
+  background-color: #f29f96;   
+}
+
+#simon > .b.blue {
+   background-color: blue;   
+}
+
+#simon > .b.blue.light {
+   background-color: #96cbf7;   
+}
+
+#simon > .b.green {
+ background-color: green;  
+}
+
+#simon > .b.green.light {
+ background-color: #9bf796;  
+}
+
+#simon > .b.yellow {
+ background-color: yellow;  
+}
+
+#simon > .b.yellow.light {
+ background-color: #f7f296;  
+}
+
+.clickable {
+  cursor: pointer;
+}
+.unclickable {
+  pointer-events: none;
+}
+
+#center {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid #333;
+  background-color: #333;
+
+}
+
+#wonMsg {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+#center > .setting {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-color: #333;
+  background-color: #333;
+}
+
+#center > .one, #center > .two{
+  align-self: flex-end;
+  padding-top: 40px;
+}
+
+#display-count, #display-mode {
+  background-color: black;
+  font-family: 'Orbitron', sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 5px 0px 5px;
+}
+
+#display-count.error {
+  color: red;
+}
+
+#display-mode {
+  cursor: pointer;
+}
+
+#start {
+  background-color: red;
+  border: solid red; 
+  color: white;
+  border-radius: 1%;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+}
+
+#signature {
+  font-style: italic;
+  margin: 20px;
+}
